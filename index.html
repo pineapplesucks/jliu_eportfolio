@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+          
+        }
+        ul,li {
+            list-style: none;
+        }
+        #backstage{
+            background: #6a6969;
+            width: 100%;
+            height: 10000px;
+        }
+        #nav{
+            width:100%;
+            height: 69px;
+            background-color: red;
+            color: #ffffff;
+            font-size: 12px;
+            /* padding: 0 10px; */
+        }
+        #nav li{
+            width:100px;
+            list-style: none;
+            float: left;
+            /* line-height: 50px; */
+            margin-top: 30px;
+            /* margin-right: 25px; */
+            /* margin-left: 50px; */
+        }
+        #nav li:hover{
+            cursor: pointer;
+        }
+        #IM li{
+            list-style: none;
+            margin-left: 300px;
+            margin-top: 150px;
+            font-size: 65px;
+            color: #ffffff;
+            padding: 0 40px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        .aa{
+            color: #00d646;
+        }
+        .name li{
+            list-style: none;
+            margin-left: 300px;
+            /* margin-top: 200px; */
+            font-size: 65px;
+            color: #ffffff;
+            padding: 0 40px;
+            font-family:Verdana, Geneva, Tahoma, sans-
+        }
+        .job_descript li{
+            list-style: none;
+            margin-left: 300px;
+            margin-top: 100px;
+            font-size: 24px;
+            color: #ffffff;
+            padding: 0 40px;
+            font-family:cursive;
+        }
+        .title li{
+            list-style: none;
+            text-align: center;
+            font-size: 50px;
+            color:#00d646;
+            margin-top: 350px;
+        }
+        .content li{
+            width:100%;
+            height:100%;
+            list-style: none;
+            color:#ffffff;
+            font-size: 15px;
+            margin-top: 25px;
+            text-align: center;
+            /* margin-left: 100px; */
+            margin-right: 100px;
+            line-height: 50px;
+        }
+       
+        .Professional{
+            width:100%;
+            height:100%;
+            position: relative;
+        }
+        
+        .Professional .second {
+          width:100%;
+          height:100%;
+          background-color: pink;
+        }
+        .Professional .second {
+            display: none;
+        }
+        .Professional:hover .second {
+            display: block;
+        }
+        .experience .ex_second {
+            display: none;
+        }
+        .experience:hover .ex_second {
+            display: block;
+        }
+        .others .others_second {
+            display: none;
+        }
+        .others:hover .others_second {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="backstage">
+        <div id="nav">
+            <ul>
+                <li> Home</li>
+                <li class="Professional"><a href="file:///Users/ljy/web_professional.html">Professional</a>
+                     <ul class="second">
+                        <li><a href="file:///Users/ljy/web_professional.html">education</a></li>
+                         <li><a href="file:///Users/ljy/web_professional.html#comp">computer proficiency</a></li>
+                         <li><a href="file:///Users/ljy/web_professional.html#proje">projects</a></li>
+
+                     </ul>
+                </li>
+                <li class="experience"><a href="file:///Users/ljy/web_experience.html">Experience</a>
+                    <ul class="ex_second">
+                        <li><a href="file:///Users/ljy/web_experience.html">Work experience</a></li>
+                        <li><a href="file:///Users/ljy/web_experience.html">Volunteer experience</a></li>
+                    </ul>
+                </li>
+                <li class="others"><a href="file:///Users/ljy/web_others.html">Others</a>
+                    <ul class="others_second">
+                        <li><a href="file:///Users/ljy/web_others.html">Membership</a></li>
+                        <li><a href="file:///Users/ljy/web_others.html">Award & Scholarship</a></li>
+                    </ul>
+                </li>
+                <li>Contact</li>
+            </ul>
+        </div>
+       <div id="introduction">
+           <div id="IM">
+               <ul>
+                   <li>I<span class="aa">
+                       '
+                   </span>M</li>
+               </ul>
+           </div>
+           <div class="name">
+               <ul>
+                   <li>Yang</li>
+                   <li>Liu</li>
+               </ul>
+               
+           </div>
+       </div>
+       <div class="job_descript">
+           <ul>
+               <li>Software Engineer</li>
+           </ul>
+       </div>
+       <div class="about_me">
+            <div class="title">
+                <ul>
+                    <li>ABOUT ME</li>
+                </ul>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>Ever since I was young, 
+                        I was always one of the top students 
+                        in my class and I received high average 
+                        in high school and in university. 
+                        As a computer nut, I fancy myself as 
+                        a self-taught expert and I'm a quick study 
+                        person. When I was in Grade 10, I bought 
+                        self-study materials and watch tutorials 
+                        online to learn Python, Arduino, and Scratch. 
+                        Additionally, I am a well-rounded person. 
+                        I participated in various clubs in high school 
+                        and I have many volunteering experiences.</li>
+                </ul>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
