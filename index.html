@@ -10,9 +10,9 @@
             padding: 0;
           
         }
-        ul,li {
+        /* ul,li {
             list-style: none;
-        }
+        } */
         #backstage{
             background: #6a6969;
             width: 100%;
@@ -32,6 +32,7 @@
             float: left;
             /* line-height: 50px; */
             margin-top: 30px;
+            position: relative;
             /* margin-right: 25px; */
             /* margin-left: 50px; */
         }
@@ -177,6 +178,20 @@
         .second li{
             line-height: 10px;
         }
+        .prof_div{
+            width: 100%;
+            height: 200px;
+            position: absolute;
+        }
+        .second{
+            position: absolute;
+        }
+        .ex_second{
+            position: absolute;
+        }
+        .others_second{
+            position: absolute;
+        }
         
     </style>
 </head>
@@ -188,12 +203,16 @@
                     <ul>
                         <li class="home"><a href="index.html">Home</a> </li>
                         <li class="Professional"><a href="web_professional.html">Professional</a>
-                             <ul class="second">
-                                <li><a href="web_professional.html">education</a></li>
-                                 <li><a href="web_professional.html#comp">computer proficiency</a></li>
-                                 <li><a href="web_professional.html#proje">projects</a></li>
-        
-                             </ul>
+                            <!-- 这个div存放里面的内容让他们正常排列 -->
+                            <div class="prof_div">
+                                <ul class="second">
+                                    <li><a href="web_professional.html">education</a></li>
+                                     <li><a href="web_professional.html#comp">computer proficiency</a></li>
+                                     <li><a href="web_professional.html#proje">projects</a></li>
+            
+                                 </ul>
+                            </div>
+                             
                         </li>
                         <li class="experience"><a href="web_experience.html">Experience</a>
                             <ul class="ex_second">
@@ -223,7 +242,7 @@
                         </div>
                         <div class="name">
                             <ul>
-                                <li>Yang</li>
+                                <li>Jiyu</li>
                                 <li>Liu</li>
                             </ul>
                             

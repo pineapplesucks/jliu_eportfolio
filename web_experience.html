@@ -165,7 +165,8 @@
         }
         .Professional{
             width:100%;
-            height:100%;
+            /* height:120px; */
+            height: 100%;
             position: relative;
         }
         
@@ -196,6 +197,11 @@
         .second li{
             line-height: 10px;
         }
+        .prof_div{
+            width: 100%;
+            height: 120px;
+            position: absolute;
+        }
         .second{
             position: absolute;
         }
@@ -214,12 +220,16 @@
                 <ul>
                     <li class="home"><a href="index.html">Home</a> </li>
                     <li class="Professional"><a href="web_professional.html">Professional</a>
-                         <ul class="second">
-                            <li><a href="web_professional.html">education</a></li>
-                             <li><a href="web_professional.html#comp">computer proficiency</a></li>
-                             <li><a href="web_professional.html#proje">projects</a></li>
-    
-                         </ul>
+                        <!-- 这个div存放里面的内容让他们正常排列 -->
+                        <div class="prof_div">
+                            <ul class="second">
+                                <li><a href="web_professional.html">education</a></li>
+                                 <li><a href="web_professional.html#comp">computer proficiency</a></li>
+                                 <li><a href="web_professional.html#proje">projects</a></li>
+        
+                             </ul>
+                        </div>
+                         
                     </li>
                     <li class="experience"><a href="web_experience.html">Experience</a>
                         <ul class="ex_second">
