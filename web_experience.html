@@ -12,9 +12,38 @@
         .backstage{
             background-color: #6a6969;
             width: 100%;
-            height: 10000px;
+            height: 1100px;
+        }
+        #nav{
+            width:100%;
+            height: 69px;
+            /* background-color: red; */
+            color: #ffffff;
+            font-size: 12px;
+            /* padding: 0 10px; */
+        }
+        #nav li{
+            width:100px;
+            list-style: none;
+            float: left;
+            /* line-height: 50px; */
+            margin-top: 30px;
+            position: relative;
+            /* margin-right: 25px; */
+            /* margin-left: 50px; */
+        }
+        #nav li:hover{
+            cursor: pointer;
+        }
+        .nav_content{
+            width: 100%;
+            height: 50px;
+            /* color: pink; */
+            margin-left: 100px;
+
         }
         .work_experience{
+            margin-top: 50px;
             width: 100%;
             height: 400px;
             /* background-color: yellow; */
@@ -55,7 +84,7 @@
         }
         .volunteer_experience{
             width: 100%;
-            height: 1200px;
+            height: 400px;
             /* background-color: pink; */
             text-align: center;
         }
@@ -68,7 +97,7 @@
         .volunteer_content{
             margin-top: 20px;
             width: 1000px;
-            height: 400px;
+            height: 440px;
             background-color: black;
             display: inline-block;
         }
@@ -134,10 +163,80 @@
             line-height: 25px;
             margin-left: 20px;
         }
+        .Professional{
+            width:100%;
+            height:100%;
+            position: relative;
+        }
+        
+        .Professional .second {
+          width:100%;
+          height:100%;
+          /* background-color: pink; */
+        }
+        .Professional .second {
+            display: none;
+        }
+        .Professional:hover .second {
+            display: block;
+        }
+        .experience .ex_second {
+            display: none;
+        }
+        .experience:hover .ex_second {
+            display: block;
+        }
+        .others .others_second {
+            display: none;
+        }
+        .others:hover .others_second {
+            display: block;
+        }
+        a{text-decoration:none; color: white;}
+        .second li{
+            line-height: 10px;
+        }
+        .second{
+            position: absolute;
+        }
+        .ex_second{
+            position: absolute;
+        }
+        .others_second{
+            position: absolute;
+        }
     </style>
 </head>
 <body>
     <div class="backstage">
+        <div id="nav">
+            <div class="nav_content">
+                <ul>
+                    <li class="home"><a href="index.html">Home</a> </li>
+                    <li class="Professional"><a href="web_professional.html">Professional</a>
+                         <ul class="second">
+                            <li><a href="web_professional.html">education</a></li>
+                             <li><a href="web_professional.html#comp">computer proficiency</a></li>
+                             <li><a href="web_professional.html#proje">projects</a></li>
+    
+                         </ul>
+                    </li>
+                    <li class="experience"><a href="web_experience.html">Experience</a>
+                        <ul class="ex_second">
+                            <li><a href="web_experience.html">Work experience</a></li>
+                            <li><a href="web_experience.html">Volunteer experience</a></li>
+                        </ul>
+                    </li>
+                    <li class="others"><a href="web_others.html">Others</a>
+                        <ul class="others_second">
+                            <li><a href="web_others.html">Membership</a></li>
+                            <li><a href="web_others.html">Award & Scholarship</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li>Contact</li> -->
+                </ul>
+            </div> 
+        </div>
         <div class="work_experience">
             <div class="work_title">
                 <ul><li> Work Experience</li></ul>
@@ -182,6 +281,8 @@
                     <ul>
                         <li>Volunteered as a cleaner to move away garbage for 
                             local dwellers and spread awareness of sorting wastes.</li>
+                        <li>Promoted cleanliness by assisting with trash removal and strengthening 
+                            residents’ environmental awareness.</li>
                     </ul>
                 </div>
                 <div class="vol_position1">
@@ -193,6 +294,8 @@
                 </div>
                 <div class="vol_work_done1">
                     <ul>
+                        <li>As a main organizer, I was mainly responsible for setting up tents, 
+                            interior decoration, and especially serving as a tour guide for visitors.</li>
                         <li>By volunteering as a guide in the Gabbagetown festival, 
                             I learnt how to communicate effectively with customers 
                             and visitors.</li>
@@ -207,7 +310,7 @@
                 </div>
                 <div class="vol_work_done2">
                     <ul>
-                        <li>I volunteered as a community worker to show movies in the open 
+                        <li>Volunteered as a community worker to show movies in the open 
                             air. I learnt how to communicate effectively with my co-workers 
                             and managers in this process.</li>
                     </ul>

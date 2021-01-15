@@ -12,9 +12,37 @@
         .backstage{
             background-color: #6a6969;
             width: 100%;
-            height: 10000px;
+            height: 1100px;
+        }
+        #nav{
+            width:100%;
+            height: 69px;
+            /* background-color: red; */
+            color: #ffffff;
+            font-size: 12px;
+            /* padding: 0 10px; */
+        }
+        #nav li{
+            width:100px;
+            list-style: none;
+            float: left;
+            /* line-height: 50px; */
+            margin-top: 30px;
+            /* margin-right: 25px; */
+            /* margin-left: 50px; */
+        }
+        #nav li:hover{
+            cursor: pointer;
+        }
+        .nav_content{
+            width: 100%;
+            height: 50px;
+            /* color: pink; */
+            margin-left: 100px;
+
         }
         .membership{
+            margin-top: 50px;
             width: 100%;
             height: 700px;
             /* background-color: yellow; */
@@ -141,10 +169,73 @@
             line-height: 25px;
             margin-left: 20px;
         }
+        .Professional .second {
+            display: none;
+        }
+        .Professional:hover .second {
+            display: block;
+        }
+        .experience .ex_second {
+            display: none;
+        }
+        .experience:hover .ex_second {
+            display: block;
+        }
+        .others .others_second {
+            display: none;
+        }
+        .others:hover .others_second {
+            display: block;
+        }
+        a{text-decoration:none; color: white;}
+        .second li{
+            line-height: 10px;
+        }
+        .Professional{
+            width:100%;
+            height:100%;
+            position: relative;
+        }
+        .second{
+            position: absolute;
+        }
+        .ex_second{
+            position: absolute;
+        }
+        .others_second{
+            position: absolute;
+        }
     </style>
 </head>
 <body>
     <div class="backstage">
+        <div id="nav">
+            <div class="nav_content">
+                <ul>
+                    <li class="home"><a href="index.html">Home</a> </li>
+                    <li class="Professional"><a href="web_professional.html">Professional</a>
+                         <ul class="second">
+                            <li><a href="web_professional.html">education</a></li>
+                             <li><a href="web_professional.html#comp">computer proficiency</a></li>
+                             <li><a href="web_professional.html#proje">projects</a></li>
+                         </ul>
+                    </li>
+                    <li class="experience"><a href="web_experience.html">Experience</a>
+                        <ul class="ex_second">
+                            <li><a href="web_experience.html">Work experience</a></li>
+                            <li><a href="web_experience.html">Volunteer experience</a></li>
+                        </ul>
+                    </li>
+                    <li class="others"><a href="web_others.html">Others</a>
+                        <ul class="others_second">
+                            <li><a href="web_others.html">Membership</a></li>
+                            <li><a href="web_others.html">Awards & Scholarship</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li>Contact</li> -->
+                </ul>
+            </div> 
+        </div>
         <div class="membership">
             <div class="membership_title">
                 <ul><li> Membership</li></ul>
@@ -180,6 +271,7 @@
                             at school.</li>
                         <li>Collaborated with Times4change to shoot a video 
                             to raise awareness of people who live in poverty.</li>
+                        <li>Organized Terry Fox run.</li>
                     </ul>
                 </div>
                 <div class="position2">
@@ -208,13 +300,18 @@
                         <li>Worked with teammates to conduct scientific experiments, 
                             such as animal dissection and observing cells by using 
                             microscopes.</li>
+                        <li>Those practical experiences led me to venture different 
+                            scientific fields, and further improved my experimental ability. </li>
+                        <li>I learn the importance of cooperation and leadership in scientific activities, 
+                            and understand that individual initiative and self-determination would be essential 
+                            to understand and explore the scientific world. </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="award">
             <div class="award_title">
-                <ul><li> Award & Scholarship</li></ul>
+                <ul><li> Awards & Scholarship</li></ul>
             </div>
             <div class="award_content">
                 <ul>
