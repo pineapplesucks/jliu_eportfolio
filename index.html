@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,68 +11,66 @@
             padding: 0;
           
         }
-        /* ul,li {
-            list-style: none;
-        } */
-        #backstage{
+        #one{
+            margin-left: 100px;
+        }
+        #one>li {
+            width: 80px;
+            height: 40px;
+            margin: 2px;
+            background: #d8d8d8;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+
+        }
+
+        .two {
+            width: 80px;
+            height: 160px;
             background: #6a6969;
-            width: 100%;
-            height: 1600px;
+            display: none;
         }
         #nav{
             width:100%;
             height: 69px;
-            /* background-color: red; */
             color: #ffffff;
             font-size: 14px;
-            /* padding: 0 10px; */
         }
         #nav li{
             width:100px;
             list-style: none;
             float: left;
-            /* line-height: 50px; */
             margin-top: 30px;
             position: relative;
-            /* margin-right: 25px; */
-            /* margin-left: 50px; */
         }
         #nav li:hover{
             cursor: pointer;
         }
-        .nav_content{
+        
+        .backstage{
+            background: #6a6969;
             width: 100%;
-            height: 50px;
-            /* color: pink; */
-            margin-left: 100px;
-
+            height: 1600px;
         }
         .person{
             width: 100%;
             height: 900px;
-            /* background-color: palevioletred; */
-            /* position: relative; */
-
         }
         .introduction{
             width: 100%;
             height: 900px;
-            /* background-color:blue; */
             position: relative;
-            /* text-align: right; */
         }
         .i_m_liu{
             width: 250px;
             height: 500px;
-            /* background-color: powderblue; */
             margin-left: 300px;
             margin-top: 150px;
             position: absolute;
         }
         #IM li{
             list-style: none;
-            /* margin-left: 300px; */
-            /* margin-top: 150px; */
             font-size: 65px;
             color: #ffffff;
             padding: 0 40px;
@@ -82,8 +81,6 @@
         }
         .name li{
             list-style: none;
-            /* margin-left: 300px; */
-            /* margin-top: 200px; */
             font-size: 65px;
             color: #ffffff;
             padding: 0 40px;
@@ -91,7 +88,6 @@
         }
         .job_descript li{
             list-style: none;
-            /* margin-left: 300px; */
             margin-top: 100px;
             font-size: 24px;
             color: #ffffff;
@@ -102,7 +98,6 @@
             width: 550px;
             height: 810px;
             text-align: right;
-            /* background-color: yellow; */
             margin-left: 700px;
             
         }
@@ -113,7 +108,6 @@
         .about_me{
             width: 100%;
             height: 400px;
-            /* background-color: yellow; */
             text-align: center;
         }
         .title li{
@@ -121,13 +115,11 @@
             text-align: center;
             font-size: 50px;
             color:#00d646;
-            /* display: inline-block; */
-            /* margin-top: 350px; */
+
         }
         .content{
             width: 830px;
             height: 500px;
-            /* background-color: #2e2a2a; */
             background-color: rgb(50, 50, 50);
 
             display: inline-block;
@@ -138,100 +130,48 @@
             list-style: none;
             color:#ffffff;
             font-size: 20px;
-            /* margin-top: 25px; */
             text-align: center;
-            /* margin-left: 100px; */
             margin-right: 100px;
             line-height: 30px;
         }
-       
-        .Professional{
-            width:100%;
-            height:100%;
-            position: relative;
-        }
-        
-        .Professional .second {
-          width:100%;
-          height:100%;
-          /* background-color: pink; */
-        }
-        .Professional .second {
-            display: none;
-        }
-        .Professional:hover .second {
-            display: block;
-        }
-        .experience .ex_second {
-            display: none;
-        }
-        .experience:hover .ex_second {
-            display: block;
-        }
-        .others .others_second {
-            display: none;
-        }
-        .others:hover .others_second {
-            display: block;
-        }
+
         a{text-decoration:none; color: white;}
-        .second li{
-            line-height: 10px;
-        }
-        .prof_div{
-            width: 100%;
-            height: 200px;
-            position: absolute;
-        }
-        .second{
-            position: absolute;
-        }
-        .ex_second{
-            position: absolute;
-        }
-        .others_second{
-            position: absolute;
-        }
+        
+        
+        
         
     </style>
 </head>
 <body>
-    <div id="backstage">
         <div class="backstage">
             <div id="nav">
-                <div class="nav_content">
+                <div id="one">
                     <ul>
                         <li class="home"><a href="index.html">Home</a> </li>
-                        <li class="Professional"><a href="web_professional.html">Professional</a>
-                            <!-- 这个div存放里面的内容让他们正常排列 -->
-                            <div class="prof_div">
-                                <ul class="second">
-                                    <li><a href="web_professional.html">education</a></li>
-                                     <li><a href="web_professional.html#comp">computer proficiency</a></li>
-                                     <li><a href="web_professional.html#proje">projects</a></li>
-            
-                                 </ul>
-                            </div>
-                             
+                        <li class="one_list"><a href="web_professional.html">Professional</a>
+                            <ul class="two">
+                                <li><a href="web_professional.html">education</a></li>
+                                <li><a href="web_professional.html#comp">computer proficiency</a></li>
+                                <li><a href="web_professional.html#proje">projects</a></li>
+        
+                            </ul>                             
                         </li>
-                        <li class="experience"><a href="web_experience.html">Experience</a>
-                            <ul class="ex_second">
+                        <li class="one_list"><a href="web_experience.html">Experience</a>
+                            <ul class="two">
                                 <li><a href="web_experience.html">Work experience</a></li>
                                 <li><a href="web_experience.html">Volunteer experience</a></li>
                             </ul>
                         </li>
-                        <li class="others"><a href="web_others.html">Others</a>
-                            <ul class="others_second">
+                        <li class="one_list"><a href="web_others.html">Others</a>
+                            <ul class="two">
                                 <li><a href="web_others.html">Membership</a></li>
                                 <li><a href="web_others.html">Award & Scholarship</a></li>
                             </ul>
                         </li>
-                        <!-- <li>Contact</li> -->
                     </ul>
                 </div> 
             </div>
             <div class="person">
-                <div class="introduction">
                     <div class="i_m_liu">
                         <div id="IM">
                             <ul>
@@ -256,7 +196,6 @@
                     <div class="pic">
                         <img src="website_pic.jpg" alt="">
                     </div>
-                </div>
                 
             </div>
        
@@ -288,6 +227,19 @@
                 </ul>
             </div>
        </div>
-    </div>
+
+       <script>
+           var lis = document.getElementsByClassName('one_list');
+           var two = document.getElementsByClassName('two');
+           for (let i = 0; i < lis.length; i++) {
+            lis[i].onmouseover = function () {
+                two[i].style.display = 'block';
+            }
+            lis[i].onmouseout = function () {
+                two[i].style.display = 'none';
+            }
+            
+        }
+       </script>
 </body>
 </html>
